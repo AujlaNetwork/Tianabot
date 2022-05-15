@@ -18,14 +18,14 @@ from inspect import getfullargspec
 StartTime = time.time()
 
 # enable logging
-FORMAT = "[TianaBot] %(message)s"
+FORMAT = "[Aujla Robot] %(message)s"
 logging.basicConfig(
     handlers=[logging.FileHandler("log.txt"), logging.StreamHandler()],
     level=logging.INFO,
     format=FORMAT,
     datefmt="[%X]",
 )
-LOGGER = logging.getLogger(__name__)
+LOGGER = logging.getLogger(AujlaPB65_Bot)
 
 # if version < 3.6, stop bot.
 if sys.version_info[0] < 3 or sys.version_info[1] < 6:
